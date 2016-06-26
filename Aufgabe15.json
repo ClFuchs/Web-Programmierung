@@ -1,0 +1,24 @@
+{
+"data": [
+    [
+		"git clone",
+		"Das Repository wird geklont"
+    ],
+    [
+		"git add",
+		"Änderungen im Projekt vermerken"
+    ],
+    [
+      "git commit",
+	  "Änderungen werden lokal gespeichert (in .git)"
+    ],
+    [
+	  "git push",
+	  "Änderungen werden ins zentrale Repository hochgeladen"
+    ],
+    [
+	  "git pull",
+	  "Aktuelle Änderungen holen und lokale Kopie updaten"
+    ]
+			]
+}

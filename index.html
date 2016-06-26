@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>EWP HA 15</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.css">
+	<link rel="stylesheet" href="Aufgabe15.css">
 </head>
 <body>
 
 <!-- TODO: Erstellen Sie hier die nötigen Inhalte -->
-
+		<table id="begriffe">
+			<thead>
+				<tr>
+					<th>Begriff</th>
+					<th>Anwendung</th>				
+				</tr>
+			</thead>
+		</table>
+		<h1>Zusammenfassung des git-Workflows</h1>
+		<p>
+			Nach der Initialisierung eines Repositories erfolgt die Duplizierung des Repositories 
+			in ein eigenes Verzeichnis mittels des Befehls <span title="$ git clone https://github.com/suchmaske/EWP-Git-Example.git" class="tooltip">git clone</span> sowie der URL des Git-Repositoriums.
+			Änderungen im Projekt werden mit dem Befehl <span title="$ git add index.html"class="tooltip">git add</span> vermerkt, jedoch noch nicht gespeichert. 
+			Vielmehr werden diese Änderungen vom Arbeitsverzeichnis auf einer Art "Zwischenebene", der 
+			staging area, abgelegt. Die anschließende Speicherung dieser Änderungen in der lokalen .git-Datei
+			erfolgt mit dem Befehl <span title="$ git commit -m My commit message"
+ class="tooltip">git commit</span>. Dabei werden die Änderungen aus der staging area ausgelesen.
+			Das nächste Ziel, die in der lokalen .git-Datei abgespeicherten Änderungen für die Versionskontrolle wieder
+			ins zentrale Repository hochzuladen, erreicht man mithilfe des Befehls <span title="$ git push origin master" class="tooltip">git push</span>. Möchte nun ein weiterer
+			Mitwirkender des Projektes diese Änderungen in eine bereits geklonte und nach den hochgeladenenn Änderungen 
+			nicht mehr aktuelle lokale Version updaten, kann er diese mithilfe des Befehls <span title="$ git pull origin" class="tooltip">git pull</span>  
+			übernehmen und verfügt somit bis zum nächtsten Upload ins zentrale Repsoitory über die aktuelle Version.	
+		</p>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+		<script src="Aufgabe15.js"></script>
 </body>
 </html>
